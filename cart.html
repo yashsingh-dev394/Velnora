@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
+        <div>
+            <ul id="navbar">
+             <li><a href="index.html">Home</a></li>
+             <li><a href="shop.html">Shop</a></li>
+             <li><a href="blog.html">Blog</a></li>
+             <li><a href="about.html">About</a></li>
+             <li><a href="contact.html">Contact</a></li>
+             <li><a class="active" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+             <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i class="fas fa-outdent" id="bar"></i>
+        </div>
+    </header>
+    <main>
+        <section id="about-header">
+            <h2>| View Your Cart Here |</h2>
+            <p>Apply coupon code to gain additional discounts ! <i class="fa-solid fa-heart"></i></p>
+        </section>
+        <section id="cart">
+            <table>
+                <thead>
+                       <td>Remove</td>
+                       <td>Image</td>
+                       <td>Name</td>
+                       <td>Price</td>
+                       <td>Quantity</td>
+                       <td>Sub-total</td>
+                </thead>
+                    
+                
+                <tbody>
+                    <tr>
+                        <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                        <td><img src="pic1.png" alt=""></td>
+                        <td>Unisex Regular Fit</td>
+                        <td>$69</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$69</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                        <td><img src="picture2.png" alt=""></td>
+                        <td>Unisex Regular Fit</td>
+                        <td>$69</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$69</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#"><i class="fa-solid fa-circle-xmark"></i></a></td>
+                        <td><img src="picture3.png" alt=""></td>
+                        <td>Unisex Regular Fit</td>
+                        <td>$69</td>
+                        <td><input type="number" value="1"></td>
+                        <td>$69</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="cart-add">
+            <div id="coupon">
+                <h3>Apply Your Coupon Here</h3>
+                <div>
+                    <input type="text" placeholder="Enter the Code">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+            <div id="sub-total">
+                <h3>Cart Totals</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td>$207</td>
+                    </tr>
+                    <tr>
+                        <td>Delivery</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$207</strong></td>
+                    </tr>
+                </table>
+                <button class="normal">Proceed to Payment</button>
+            </div>
+        </section>
+    </main>
+    <footer class="last-section">
+        <div class="col">
+            <img src="logo.png" alt="logo" class="logo">
+            <h4>Contact</h4>
+            <p><span>Address: </span>Sector-24, Rohini, Delhi-110086</p>
+            <p><span>Phone: </span>+91 8800671017</p>
+            <p><span>Hours: </span>Mon - Sat 10:00 - 17:00</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Google Play or App Store</p>
+            <div class="row">
+                <img src="play-store.png" class="logo">
+                <img src="app-store.png" alt="" class="logo">
+            </div>
+            <p>Secured Payments Options</p>
+            <img src="payment.png" alt="" class="logo">
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
